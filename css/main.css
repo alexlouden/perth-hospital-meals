@@ -15,6 +15,8 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
 
 /*
@@ -263,3 +265,44 @@ textarea {
   }
 }
 
+/**********************************************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+a {
+  color: #0860bc;
+}
+
+.container {
+  max-width: 600px;
+  padding: 16px;
+  padding-top: 64px;
+  margin: 0 auto;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gap {
+  flex-grow: 1;
+}
+
+.footer {
+  color: #999;
+}
+
+h3 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+ol li {
+  margin-top: 0.5em;
+}

@@ -1,41 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Perth Hospital Meals</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
 
-<body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+    <div class="container">
+      <h1>Perth Hospital Meals</h1>
+      <div class="info">
+        <p>
+          A simple idea: support local hospital clinicians who are working in
+          war-like conditions due to COVID-19, and support local restaurants who
+          are really hurting at the moment.
+        </p>
+        <p>
+          We're bringing the same ideas from the
+          <a
+            href="https://medium.com/@frankba/the-covid-clinician-meal-support-program-719b28416c98"
+            >SF Hospital Meals</a
+          >
+          program in San&nbsp;Francisco to Perth Australia as
+          <a href="https://www.instagram.com/explore/tags/perthhospitalmeals/"
+            >#PerthHospitalMeals</a
+          >.
+        </p>
+      </div>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+      <h3>Goals of the program</h3>
+      <div class="goals">
+        <ol>
+          <li>
+            Feed our clinicians who are stressed, tired, and generally don’t
+            have time in this environment to make and bring their own food.
+          </li>
+          <li>
+            Make the process simple and efficient for hospitals.
+          </li>
+          <li>
+            Employ restaurants and their teams during this really difficult
+            time.
+          </li>
+        </ol>
+      </div>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+      <h3>How can I help?</h3>
+      <div class="help">
+        <p>
+          If you're a restaurant and can make 50 or more self-serve meals for
+          less than $20/meal -
+          <a href="mailto:alex@louden.com">please get in touch!</a>
+        </p>
 
+        <p>
+          If you'd like to donate, you can do so below. Every dollar donated
+          goes to buying meals for hospital clinicians.
+        </p>
+      </div>
+
+      <div class="gap"></div>
+
+      <div class="footer">Started by Alex Louden and Mike O'Hanlon</div>
+    </div>
+    <script src="js/main.js"></script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-161527396-1"
+    ></script>
+    <script>
+      window["ga-disable-UA-161527396-1"] = navigator.doNotTrack === "1";
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-161527396-1");
+    </script>
+  </body>
 </html>
