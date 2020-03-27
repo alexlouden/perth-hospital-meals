@@ -278,6 +278,11 @@ a {
   color: #0860bc;
 }
 
+.logo {
+  max-width: 350px;
+  margin: 16px;
+}
+
 .container {
   max-width: 600px;
   padding: 16px;
