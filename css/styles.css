@@ -42,8 +42,8 @@
   --font-size-medium: 20px;
   --font-line-height-medium: 24px;
 
-  --font-size-large: 23px;
-  --font-line-height-large: 30px;
+  --font-size-large: 24px;
+  --font-line-height-large: 34px;
 
   --border-radius-extra-small: 4px;
   --border-radius-small: 8px;
@@ -83,9 +83,9 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: var(--max-app-width);
-  margin: 20px auto;
+  margin: 10px auto;
   font-size: var(--font-size-normal);
   line-height: var(--font-line-height-normal);
   color: var(--color-red-dark);
@@ -110,10 +110,9 @@ footer {
 }
 
 .card__subheading {
-  font-size: var(--font-size-normal);
-  line-height: var(--font-line-height-normal);
+  font-size: var(--font-size-medium);
+  line-height: var(--font-line-height-medium);
   font-weight: var(--font-weight-bold);
-  margin-bottom: 0;
   color: var(--color-black);
 }
 
@@ -128,7 +127,7 @@ footer {
 .card__info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: var(--spacing-6);
   width: 50%;
 }
@@ -136,9 +135,11 @@ footer {
 .card__donation {
   display: flex;
   flex-direction: column;
-  margin: var(--spacing-7) auto;
-  justify-content: center;
-  padding: 0 var(--spacing-6);
+  margin: var(--spacing-6);
+  margin-left: 0;
+  justify-content: flex-start;
+  width: 50%;
+  padding: var(--spacing-4) var(--spacing-6);
   border-radius: var(--border-radius-small);
   background-color: var(--color-background-grey);
 }
@@ -147,8 +148,8 @@ footer {
   background-color: var(--color-background-pink);
   color: var(--color-black);
   border-radius: var(--border-radius-small);
-  padding: var(--spacing-2) var(--spacing-5);
-  margin: var(--spacing-4) 0;
+  padding: var(--spacing-5);
+  margin-top: var(--spacing-4);
 }
 
 iframe {
@@ -183,12 +184,16 @@ iframe {
     padding: var(--spacing-4);
   }
   .card__donation {
+    width: calc(100% - var(--spacing-4) * 2);
     padding: var(--spacing-4);
-    margin: var(--spacing-3) auto;
+    margin: var(--spacing-4);
   }
   .card__note {
     padding: var(--spacing-4);
     margin: var(--spacing-2) 0;
+  }
+  footer {
+    margin: var(--spacing-3);
   }
 }
 
