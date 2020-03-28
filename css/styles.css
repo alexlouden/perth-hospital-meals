@@ -187,10 +187,11 @@ iframe {
     width: calc(100% - var(--spacing-4) * 2);
     padding: var(--spacing-4);
     margin: var(--spacing-4);
+    margin-top: 0;
   }
   .card__note {
     padding: var(--spacing-4);
-    margin: var(--spacing-2) 0;
+    margin: var(--spacing-4) 0 var(--spacing-2) 0;
   }
   footer {
     margin: var(--spacing-3);
