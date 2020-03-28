@@ -15,8 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-family: var(--font-family-text);
 }
 
 /*
@@ -299,10 +298,6 @@ a:hover {
 
 .gap {
   flex-grow: 1;
-}
-
-.footer {
-  color: #999;
 }
 
 h3 {
