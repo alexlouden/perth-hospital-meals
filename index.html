@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
@@ -23,14 +24,21 @@
         your experience and security.
       </p>
     <![endif]-->
-
-    <div class="container">
-      <img class="logo" src="./img/phm_logo.png" alt="Perth Hospital Meals" />
-      <div class="info">
-        <p>
-          A simple idea: support local hospital clinicians who are working in
-          war-like conditions due to COVID-19, and support local restaurants who
-          are really hurting at the moment.
+    <div class="logo__wrapper">
+      <img
+        class="logo"
+        width="300"
+        src="./img/phm_logo.svg"
+        alt="Perth Hospital Meals"
+      />
+    </div>
+    <main class="card">
+      <div class="card__info">
+        <h2 class="card__heading">A simple idea.</h2>
+        <p class="card__intro">
+          Support local hospital clinicians who are working in war-like
+          conditions due to COVID-19, and support local restaurants who are
+          really hurting at the moment.
         </p>
         <p>
           We're bringing the same ideas from the
@@ -43,55 +51,51 @@
             >#PerthHospitalMeals</a
           >.
         </p>
+        <div class="card__note">
+          <h3 class="card__subheading">Goals of the program</h3>
+          <ol>
+            <li>
+              Feed our clinicians who are stressed, tired, and generally don’t
+              have time in this environment to make and bring their own food.
+            </li>
+            <li>
+              Make the process simple and efficient for hospitals.
+            </li>
+            <li>
+              Employ restaurants and their teams during this really difficult
+              time.
+            </li>
+          </ol>
+        </div>
+
+        <h3 class="card__subheading">How can I help?</h3>
+        <div class="help">
+          <p>
+            If you're a restaurant and can make 50 or more self-serve meals for
+            less than $20/meal -
+            <a href="mailto:alex@louden.com">please get in touch!</a>
+          </p>
+
+          <p>
+            If you'd like to donate, you can do so below. Every dollar donated
+            goes to buying meals for hospital clinicians.
+          </p>
+        </div>
       </div>
-
-      <h3>Goals of the program</h3>
-      <div class="goals">
-        <ol>
-          <li>
-            Feed our clinicians who are stressed, tired, and generally don’t
-            have time in this environment to make and bring their own food.
-          </li>
-          <li>
-            Make the process simple and efficient for hospitals.
-          </li>
-          <li>
-            Employ restaurants and their teams during this really difficult
-            time.
-          </li>
-        </ol>
+      <div class="card__donation">
+        <iframe
+          allowpaymentrequest=""
+          frameborder="0"
+          name="donorbox"
+          scrolling="no"
+          seamless="seamless"
+          src="https://donorbox.org/embed/perth-hospital-meals?default_interval=o&amount=100&hide_donation_meter=true"
+          width="100%"
+        ></iframe>
       </div>
+    </main>
+    <footer>Started by Alex Louden and Mike O'Hanlon</footer>
 
-      <h3>How can I help?</h3>
-      <div class="help">
-        <p>
-          If you're a restaurant and can make 50 or more self-serve meals for
-          less than $20/meal -
-          <a href="mailto:alex@louden.com">please get in touch!</a>
-        </p>
-
-        <p>
-          If you'd like to donate, you can do so below. Every dollar donated
-          goes to buying meals for hospital clinicians.
-        </p>
-      </div>
-
-      <iframe
-        allowpaymentrequest=""
-        frameborder="0"
-        height="900px"
-        name="donorbox"
-        scrolling="no"
-        seamless="seamless"
-        src="https://donorbox.org/embed/perth-hospital-meals?default_interval=o&amount=100&hide_donation_meter=true"
-        style="max-width: 425px; min-width: 310px; max-height:none!important"
-        width="100%"
-      ></iframe>
-
-      <div class="gap"></div>
-
-      <div class="footer">Started by Alex Louden and Mike O'Hanlon</div>
-    </div>
     <script src="js/main.js"></script>
     <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
 

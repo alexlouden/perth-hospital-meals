@@ -1,0 +1,215 @@
+:host,
+:root {
+  --color-red: #f3034d;
+  --color-red-dark: #672634;
+
+  --gradient-pink: linear-gradient(246deg, #f3034d 0%, #ff00b0 100%);
+  --gradient-pink-fade: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #ffffff 30%,
+    #ffeaee 30.1%,
+    #ffeaee 100%
+  );
+
+  --color-grey-extra-light: rgba(0, 0, 0, 0.12);
+  --color-grey-light: rgba(0, 0, 0, 0.24);
+  --color-grey: rgba(0, 0, 0, 0.56);
+  --color-grey-dark: rgba(0, 0, 0, 0.6);
+  --color-grey-extra-dark: rgba(0, 0, 0, 0.72);
+  --color-black: #000;
+  --color-white: #fff;
+
+  --color-background-grey: #f4f4f4;
+  --color-background-yellow: #fff6eb;
+  --color-background-pink: #ffeaee;
+
+  --color-main-text: var(--color-black);
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+
+  --font-family-text: "Inter", -apple-system, BlinkMacSystemFont, avenir next,
+    avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
+    sans-serif;
+
+  --font-size-extra-small: 12px;
+  --font-line-height-extra-small: 18px;
+
+  --font-size-small: 14px;
+  --font-line-height-small: 20px;
+
+  --font-size-normal: 16px;
+  --font-line-height-normal: 24px;
+
+  --font-size-medium: 20px;
+  --font-line-height-medium: 24px;
+
+  --font-size-large: 24px;
+  --font-line-height-large: 30px;
+
+  --border-radius-extra-small: 4px;
+  --border-radius-small: 8px;
+  --border-radius-large: 12px;
+  --drop-shadow-small: 0px 1px 4px rgba(0, 0, 0, 0.16);
+  --drop-shadow-large: 0px 8px 16px rgba(0, 0, 0, 0.16),
+    0px 1px 4px rgba(0, 0, 0, 0.16);
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
+  --spacing-5: 32px;
+  --spacing-6: 40px;
+  --spacing-7: 64px;
+  --spacing-8: 96px;
+  --spacing-9: 128px;
+  --spacing-10: 192px;
+  --transition-button-hover: 100ms linear;
+  --max-app-width: 1200px;
+}
+
+body {
+  /* background: var(--color-background-grey); */
+  background-image: var(--gradient-pink-fade);
+  margin: var(--spacing-6) 0;
+}
+
+.logo__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: var(--max-app-width);
+  margin: 20px auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--max-app-width);
+  margin: 20px auto;
+  font-size: var(--font-size-normal);
+  line-height: var(--font-line-height-normal);
+  color: var(--color-red-dark);
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  max-width: var(--max-app-width);
+  margin: 0 auto;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--drop-shadow-large);
+}
+
+.card__heading {
+  font-size: var(--font-size-large);
+  line-height: var(--font-line-height-large);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-3);
+  color: var(--color-black);
+}
+
+.card__subheading {
+  font-size: var(--font-size-normal);
+  line-height: var(--font-line-height-normal);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 0;
+  color: var(--color-black);
+}
+
+.card__intro {
+  font-size: var(--font-size-large);
+  line-height: var(--font-line-height-large);
+  font-weight: var(--font-weight-normal);
+  margin-bottom: var(--spacing-2);
+  margin-top: var(--spacing-2);
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--spacing-6);
+  width: 50%;
+}
+
+.card__donation {
+  display: flex;
+  flex-direction: column;
+  margin: var(--spacing-7) auto;
+  justify-content: center;
+  padding: 0 var(--spacing-6);
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-background-grey);
+}
+
+.card__note {
+  background-color: var(--color-background-pink);
+  color: var(--color-black);
+  border-radius: var(--border-radius-small);
+  padding: var(--spacing-2) var(--spacing-5);
+  margin: var(--spacing-4) 0;
+}
+
+iframe {
+  min-width: 400px;
+  max-height: none !important;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    margin: 0 var(--spacing-4);
+  }
+}
+
+@media only screen and (max-width: 1044px) {
+  .card {
+    flex-direction: column;
+    margin: 0 var(--spacing-3);
+  }
+  .card__heading {
+    font-size: var(--font-size-medium);
+    line-height: var(--font-line-height-medium);
+  }
+  .card__intro {
+    font-size: var(--font-size-normal);
+    line-height: var(--font-line-height-normal);
+    font-weight: var(--font-weight-bold);
+  }
+  .card__info {
+    width: 100%;
+    padding: var(--spacing-4);
+  }
+  .card__donation {
+    padding: var(--spacing-4);
+    margin: var(--spacing-3) auto;
+  }
+  .card__note {
+    padding: var(--spacing-4);
+    margin: var(--spacing-2) 0;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .card__info {
+    padding: var(--spacing-2) var(--spacing-4);
+  }
+  .card__note {
+    padding: var(--spacing-2) var(--spacing-4);
+  }
+  .card__donation {
+    padding: var(--spacing-2) var(--spacing-4);
+  }
+  iframe {
+    min-width: 320px;
+  }
+  li {
+    font-size: var(--font-size-normal);
+  }
+}

@@ -271,18 +271,20 @@ textarea {
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
 a {
-  color: #0860bc;
+  color: var(--color-red);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 .logo {
   max-width: 350px;
   margin: 16px;
 }
-
+/* 
 .container {
   max-width: 600px;
   padding: 16px;
@@ -293,7 +295,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .gap {
   flex-grow: 1;
@@ -308,8 +310,15 @@ h3 {
   margin-bottom: 0.5em;
 }
 
-ol li {
+ol {
   margin-top: 0.5em;
+  padding-left: 20px;
+}
+
+li {
+  margin-top: 0.5em;
+  padding-left: 10px;
+  font-size: var(--font-size-medium);
 }
 
 iframe {
