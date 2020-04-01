@@ -64,6 +64,10 @@
   --max-app-width: 1200px;
 }
 
+html {
+  min-height: 100vh;
+}
+
 body {
   /* background: var(--color-background-grey); */
   background-image: var(--gradient-pink-fade);
