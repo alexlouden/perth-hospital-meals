@@ -209,12 +209,13 @@ iframe {
   margin-top: 20px;
 }
 .event__images img {
-  width: 200px;
   height: 200px;
+  max-width: 300px;
   overflow: hidden;
   border-radius: 10px;
   margin-right: 10px;
   object-fit: cover;
+  width: calc(100% - 10px);
 }
 
 /* Media Queries */
