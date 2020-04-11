@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/simpleLightbox.min.css" />
     <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap" rel="stylesheet">
 
     <meta name="theme-color" content="#fafafa" />
@@ -99,31 +100,50 @@
       </div>
       <!-- Timeline -->
       <ul class="timeline">
-        <li class="event" data-date="April 1, 2020">
-          <h3>First meal delivery done!50 meals from Bivouac to Royal Perth Hospital ICU</h3>
+        <li class="event" data-date="March 23, 2020">
+          <h3>Started Perth Hospital Meals, inspired by the <a href="https://frontlinefoods.org" target="_blank">Frontline Foods</a> program in the US</h3>
+        </li>
+        <li class="event" data-date="March 30, 2020">
+          <h3>Pilot delivery of 50 meals to Royal Perth Hospital ICU</h3>
           <p>
-            Just ran our first meal delivery for Perth Hospital Meals - 50 meals from Bivouac to Royal Perth Hospital ICU!
-            Our aim is to support both clinicians battling #COVID19au and local restaurants who are struggling.
-            </p>
+            Our first partner restaurant <a href="https://bivouac.com.au/" target="_blank">Bivouac</a> made and delivered 50 meals
+             to the Intensive Care Unit at Royal Perth Hospital. The meals were individually packaged and refrigerated so hospital
+             staff can heat them up throughout their shift, and consisted of 25 beef tagine with couscous,
+             and 25 vegetarian meals (chermoula buttered zucchini with red rice).
+          </p>
           <div class="event__images">
-            <a href="https://pbs.twimg.com/media/EUfkd0oVAAEedPD?format=jpg&name=large" target="_blank">
-              <img src="https://pbs.twimg.com/media/EUfkd0oVAAEedPD?format=jpg&name=large">
+            <a class="gallery_image" href="img/20200330/1.jpg">
+              <img src="img/20200330/1.thumb.jpg">
             </a>
-            <a href="https://pbs.twimg.com/media/EUfkfVbUEAASDuE?format=jpg&name=large" target="_blank">
-              <img src="https://pbs.twimg.com/media/EUfkfVbUEAASDuE?format=jpg&name=large">
+            <a class="gallery_image" href="img/20200330/2.jpg">
+              <img src="img/20200330/2.thumb.jpg">
             </a>
-            <a href="https://pbs.twimg.com/media/EUfkgRfUUAAow80?format=jpg&name=large" target="_blank">
-              <img src="https://pbs.twimg.com/media/EUfkgRfUUAAow80?format=jpg&name=large">
+            <a class="gallery_image" href="img/20200330/3.jpg">
+              <img src="img/20200330/3.thumb.jpg">
             </a>
           </div>
         </li>
-        <li class="event" data-date="March 29, 2020">
-          <h3>First round of donations!</h3>
-          <p>We've got $200 of donations so far! That feeds 20 hospital workers, thankyou!</p>    
+        <li class="event" data-date="April 9, 2020">
+          <h3><a href="https://prwire.com.au/pr/89154/perth-hospital-meals-supports-local-restaurants-and-frontline-medical-workers-throughout-the-covid-19-crisis">
+            Press release</a> announcing the program</h3>
         </li>
-        <li class="event" id="date" data-date="March 28, 2020">
-          <h3>Launched Perth Hospital site!</h3>
-          <p>We did things, woo!</p>    
+        <li class="event" id="date" data-date="April 9, 2020">
+          <h3>Delivered another 50 meals from Bivouac to Royal Perth Hospital ICU</h3>
+          <p>
+            Thanks to generous donations by the community, we delivered another 50 meals from Bivouac to RPH ICU.
+            This week, Bivouac's chefs made Mulligatawny and Minestrone soup.
+          </p>
+          <div class="event__images">
+            <a class="gallery_image" href="img/20200409/1.jpg">
+              <img src="img/20200409/1.thumb.jpg">
+            </a>
+            <a class="gallery_image" href="img/20200409/2.jpg">
+              <img src="img/20200409/2.thumb.jpg">
+            </a>
+            <a class="gallery_image" href="img/20200409/3.jpg">
+              <img src="img/20200409/3.thumb.jpg">
+            </a>
+          </div>
         </li>
       </ul>
     </main>
@@ -137,6 +157,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/simpleLightbox.min.js"></script>
     <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
 
     <script
@@ -144,6 +165,8 @@
       src="https://www.googletagmanager.com/gtag/js?id=UA-161527396-1"
     ></script>
     <script>
+      new SimpleLightbox({elements: '.event__images a.gallery_image'});
+
       window["ga-disable-UA-161527396-1"] = navigator.doNotTrack === "1";
 
       window.dataLayer = window.dataLayer || [];
